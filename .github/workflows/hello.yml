@@ -1,1 +1,8 @@
-Hello evelyne
+name: Hello Evelyne
+on: [push]
+jobs: 
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Evelyne
+        run: echo "Hello Evelyne"
