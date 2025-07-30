@@ -1,0 +1,29 @@
+name: Print name
+on: [push] #triggers the workflow on every push
+
+jobs:
+  print-names:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello
+        run: echo "Printing names"
+
+      - name: Print Name 1
+        run: echo "Christine Mugwera"
+
+      - name: Print Name 2
+        run: echo "Peter Mubiru"
+
+      - name: Print Name 3
+        run: echo "Esther Nakungu"
+
+      - name: Print Name 4
+        run: echo "Ashley Bagalya"
+
+      - name: Print Name 5
+        run: echo "Evelyne Uwase"
+
+        
+      - name: Done
+        run: echo "All names printed successfully"
