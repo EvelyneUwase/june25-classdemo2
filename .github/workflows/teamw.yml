@@ -24,12 +24,15 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run lint
-        run: |
-          # Install linting tool if not in requirements
-          pip install flake8
-          flake8 .
-
       - name: Run tests
         run: |
           if [ -f pytest.ini ] || [ -d tests ]; then pytest; else echo "No tests found."; fi
+
+      - name: Run lint
+        run: |
+          pip install flake8
+          flake8 .
+
+      - name: Build (example placeholder)
+        run: |
+          echo "Build step here - customize as needed"
