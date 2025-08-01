@@ -1,4 +1,4 @@
-name: Team CI/CD Pipeline
+name: Team Pipeline
 
 on:
   push:
